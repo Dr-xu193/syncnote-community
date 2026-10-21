@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "weights": {
+    "authority": 32.0,
+    "freshness": 26.0,
+    "topic_match": 16.0,
+    "impact": 12.0,
+    "corroboration": 10.0,
+    "complete_content": 4.0
+  },
+  "freshness_half_life_hours": 36.0,
+  "unknown_date_penalty": 8.0,
+  "incomplete_content_penalty": 5.0
+}

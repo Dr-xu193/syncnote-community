@@ -1,0 +1,24 @@
+{
+  "firebase": {
+    "projectId": "YOUR_PROJECT_ID",
+    "apiKey": "YOUR_FIREBASE_API_KEY",
+    "appId": "YOUR_PLATFORM_APP_ID",
+    "messagingSenderId": "YOUR_SENDER_ID",
+    "authDomain": "",
+    "storageBucket": ""
+  },
+  "google": {
+    "serverClientId": "",
+    "desktopClientId": "",
+    "desktopClientSecret": ""
+  },
+  "webdav": {
+    "url": "https://dav.jianguoyun.com/dav/",
+    "username": "",
+    "password": ""
+  },
+  "ai": {
+    "deepseekApiKey": "",
+    "geminiApiKey": ""
+  }
+}

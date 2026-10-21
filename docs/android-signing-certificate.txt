@@ -1,0 +1,8 @@
+SyncNote Community official APK signing certificate (public fingerprints only)
+Application ID: com.syncnote.community
+SHA-1: 9F:C1:04:71:47:A0:ED:27:B2:AE:52:BB:A0:34:B3:7C:2F:A2:7E:B9
+SHA-256: 59:90:89:84:58:E0:6B:5B:97:6B:DB:D1:61:D8:13:1F:1D:73:0E:D1:41:47:EA:FB:2D:5D:1D:EF:1A:97:63:56
+
+These fingerprints may be registered in your own Firebase Android application
+when using the official community APK. They do not contain the signing private key.
+Self-built APKs must use the fingerprints of your own signing certificate instead.

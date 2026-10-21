@@ -1,0 +1,16 @@
+name: 功能与体验建议
+description: 讨论需求、改进方向或使用体验
+title: "[Idea] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: 你想解决什么问题？
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: 建议的使用方式
+    validations:
+      required: true

@@ -1,0 +1,29 @@
+name: 问题报告
+description: 报告可复现的错误（请勿提交密钥和个人数据）
+title: "[Bug] "
+body:
+  - type: input
+    id: platform
+    attributes:
+      label: 平台与版本
+      placeholder: Windows 11 / Android 15，社区版 0.1.0
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤
+      description: 列出步骤，不要包含登录凭据或私人内容。
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: 预期结果与实际结果
+    validations:
+      required: true
+  - type: textarea
+    id: extra
+    attributes:
+      label: 已脱敏的补充信息
+      description: 提交前遮住账号、笔记、API Key、应用密码和个人文件路径。

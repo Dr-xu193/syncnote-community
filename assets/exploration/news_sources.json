@@ -1,0 +1,146 @@
+{
+  "schema_version": 2,
+  "sources": [
+    {
+      "id": "chinanews_scroll",
+      "name": "中国新闻网·即时",
+      "authority": 0.98,
+      "region": "综合",
+      "topic": "综合",
+      "kind": "rss",
+      "url": "https://www.chinanews.com.cn/rss/scroll-news.xml",
+      "limit": 18
+    },
+    {
+      "id": "chinanews_finance",
+      "name": "中国新闻网·财经",
+      "authority": 0.98,
+      "region": "中国大陆",
+      "topic": "经济金融",
+      "kind": "rss",
+      "url": "https://www.chinanews.com.cn/rss/finance.xml",
+      "limit": 16
+    },
+    {
+      "id": "chinanews_world",
+      "name": "中国新闻网·国际",
+      "authority": 0.98,
+      "region": "国际",
+      "topic": "战争与地缘",
+      "kind": "rss",
+      "url": "https://www.chinanews.com.cn/rss/world.xml",
+      "limit": 16
+    },
+    {
+      "id": "chinanews_china",
+      "name": "中国新闻网·国内",
+      "authority": 0.98,
+      "region": "中国大陆",
+      "topic": "中国大陆",
+      "kind": "rss",
+      "url": "https://www.chinanews.com.cn/rss/china.xml",
+      "limit": 16
+    },
+    {
+      "id": "openai_official",
+      "name": "OpenAI·官方发布",
+      "authority": 1.0,
+      "region": "国际",
+      "topic": "人工智能",
+      "kind": "rss",
+      "url": "https://openai.com/news/rss.xml",
+      "limit": 16,
+      "source_class": "first_party",
+      "language": "en"
+    },
+    {
+      "id": "deepmind_official",
+      "name": "Google DeepMind·官方研究",
+      "authority": 1.0,
+      "region": "国际",
+      "topic": "人工智能",
+      "kind": "rss",
+      "url": "https://deepmind.google/blog/rss.xml",
+      "limit": 16,
+      "source_class": "first_party",
+      "language": "en"
+    },
+    {
+      "id": "anthropic_official",
+      "name": "Anthropic·官方动态",
+      "authority": 1.0,
+      "region": "国际",
+      "topic": "人工智能",
+      "kind": "sitemap",
+      "url": "https://www.anthropic.com/sitemap.xml",
+      "limit": 16,
+      "source_class": "first_party",
+      "language": "en",
+      "path_prefixes": ["/news/", "/research/"]
+    },
+    {
+      "id": "huggingface_official",
+      "name": "Hugging Face·官方博客",
+      "authority": 0.99,
+      "region": "国际",
+      "topic": "人工智能",
+      "kind": "rss",
+      "url": "https://huggingface.co/blog/feed.xml",
+      "limit": 16,
+      "source_class": "first_party",
+      "language": "en"
+    },
+    {
+      "id": "microsoft_research",
+      "name": "Microsoft Research·官方研究",
+      "authority": 0.99,
+      "region": "国际",
+      "topic": "人工智能",
+      "kind": "rss",
+      "url": "https://www.microsoft.com/en-us/research/feed/",
+      "limit": 16,
+      "source_class": "first_party",
+      "language": "en"
+    },
+    {
+      "id": "newsnow_aihot",
+      "name": "AI 热榜·实时聚合",
+      "authority": 0.90,
+      "region": "综合",
+      "topic": "人工智能",
+      "kind": "newsnow_json",
+      "url": "https://newsnow.busiyi.world/api/s?id=aihot&latest=true",
+      "limit": 12
+    },
+    {
+      "id": "newsnow_ithome",
+      "name": "IT之家·科技快讯",
+      "authority": 0.90,
+      "region": "中国大陆",
+      "topic": "综合",
+      "kind": "newsnow_json",
+      "url": "https://newsnow.busiyi.world/api/s?id=ithome&latest=true",
+      "limit": 12
+    },
+    {
+      "id": "newsnow_cls_depth",
+      "name": "财联社·深度",
+      "authority": 0.92,
+      "region": "中国大陆",
+      "topic": "经济金融",
+      "kind": "newsnow_json",
+      "url": "https://newsnow.busiyi.world/api/s?id=cls-depth&latest=true",
+      "limit": 12
+    },
+    {
+      "id": "newsnow_reference",
+      "name": "参考消息·国际",
+      "authority": 0.94,
+      "region": "国际",
+      "topic": "战争与地缘",
+      "kind": "newsnow_json",
+      "url": "https://newsnow.busiyi.world/api/s?id=cankaoxiaoxi&latest=true",
+      "limit": 12
+    }
+  ]
+}

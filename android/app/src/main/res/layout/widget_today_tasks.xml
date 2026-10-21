@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/widget_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/widget_task_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="今日任务 0"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/widget_task_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:maxLines="5"
+        android:text="打开 SyncNote 后自动显示今日任务"
+        android:textColor="#EDE7FF"
+        android:textSize="14sp" />
+</LinearLayout>

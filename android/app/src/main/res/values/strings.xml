@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">syncnote</string>
+    <string name="widget_recent_memo_description">SyncNote 最近备忘</string>
+    <string name="widget_today_tasks_description">SyncNote 今日任务</string>
+    <string name="widget_quick_action_description">SyncNote 快速操作</string>
+</resources>
