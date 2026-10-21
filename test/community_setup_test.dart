@@ -1,9 +1,27 @@
+import 'dart:io';
+
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:syncnote/main.dart' as community;
 import 'package:syncnote/core/community_config.dart';
 import 'package:syncnote/features/settings/community_setup_screen.dart';
 
 void main() {
+  testWidgets('application bootstrap does not create Firebase before setup', (
+    tester,
+  ) async {
+    final previousOverrides = HttpOverrides.current;
+    addTearDown(() => HttpOverrides.global = previousOverrides);
+    FlutterSecureStorage.setMockInitialValues({});
+    community.main();
+    await tester.pumpAndSettle();
+    expect(find.byType(CommunitySetupScreen), findsOneWidget);
+    expect(Firebase.apps, isEmpty);
+    expect(tester.takeException(), isNull);
+  });
+
   Map<String, dynamic> config() => {
     'firebase': {
       'projectId': 'example-project',
