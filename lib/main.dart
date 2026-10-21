@@ -29,17 +29,24 @@ void main() async {
 
   await CommunityConfig.load();
   if (!CommunityConfig.configured) {
-    runApp(
-      MaterialApp(
-        title: 'SyncNote Community',
-        theme: AppTheme.lightTheme,
-        home: CommunitySetupScreen(onConfigured: _startConfiguredApp),
-      ),
-    );
+    _showCommunitySetup();
     return;
   }
-  await _startConfiguredApp();
+  try {
+    await _startConfiguredApp();
+  } catch (_) {
+    CommunityConfig.loadError = '服务初始化失败，请核对当前平台的 Firebase 配置和网络。';
+    _showCommunitySetup();
+  }
 }
+
+void _showCommunitySetup() => runApp(
+  MaterialApp(
+    title: 'SyncNote Community',
+    theme: AppTheme.lightTheme,
+    home: CommunitySetupScreen(onConfigured: _startConfiguredApp),
+  ),
+);
 
 Future<void> _startConfiguredApp() async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
@@ -83,8 +90,12 @@ Future<void> initDesktopServices() async {
       final Menu menu = Menu();
 
       await systemTray.initSystemTray(
-        title: "SyncNote",
-        iconPath: "assets/icons/app_icon.ico",
+        title: "SyncNote Community",
+        iconPath: File.fromUri(
+          File(
+            Platform.resolvedExecutable,
+          ).parent.uri.resolve('data/flutter_assets/assets/icons/app_icon.ico'),
+        ).path,
       );
 
       await menu.buildFrom([
