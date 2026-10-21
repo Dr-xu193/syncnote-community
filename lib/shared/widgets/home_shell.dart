@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:syncnote/core/app_config.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 import 'package:syncnote/core/theme/app_theme.dart';
@@ -144,6 +145,7 @@ class _HomeShellState extends State<HomeShell> with WidgetsBindingObserver {
   }
 
   Future<void> _checkDailyAi() async {
+    if (AppConfig.deepseekApiKey.isEmpty) return;
     if (_checkingDailyAi || !mounted) return;
     _dailyRetryTimer?.cancel();
     _dailyRetryTimer = null;
