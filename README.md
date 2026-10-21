@@ -47,6 +47,8 @@ flutter build windows --release
 
 Android Release 需要自己的签名密钥和环境变量，详见 **[构建与签名](docs/BUILD.md)**。仓库不包含签名私钥。独立 Python 量化内核位于 `quant_core/`，只有 Windows 中依赖该内核的量化/模拟功能需要额外安装 Python；普通记录功能不需要。
 
+Windows 下载包附带内核源码。需要量化功能时先安装 Python 3.11+，再运行 `setup_quant_windows.cmd`；该步骤会创建本机虚拟环境，不会连接作者的账号。
+
 ## 反馈与贡献
 
 - 使用 **[Issues](https://github.com/Dr-xu193/syncnote-community/issues)** 报告错误或提出建议，说明平台、版本、复现步骤与预期结果。

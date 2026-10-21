@@ -35,6 +35,8 @@ flutter build windows --release
 
 输出目录 `build/windows/x64/runner/Release/`，主程序为 `syncnote-community.exe`。分发时应打包整个目录及其中 Flutter 自动生成的第三方许可信息，不能只发 EXE。
 
+社区版 Windows 包目前没有商业代码签名证书；请从项目自己的 Releases 下载，并使用发布页提供的校验文件核对下载完整性。
+
 Windows 使用仓库内的 CMake 补丁修正 cloud_firestore 6.7.1 的持久缓存开关。升级该插件时应重新审查补丁；构建会在源码匹配失败时明确停止，而不是静默失效。
 
 ## 可选 Python 内核
