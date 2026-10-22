@@ -10,29 +10,43 @@ SyncNote began as a privately developed, daily-use application. Its original Git
 
 ## Actual application views
 
-The screenshots below were captured through Computer Use from the maintainer's already-running **Windows personal edition** on **2026-10-21**. They show shared application workflows, not design mockups or generated AI answers. The Community edition adds its own first-run service configuration and separate app identity; its installation is not the same as an already-configured personal deployment.
+The six screenshots below were **provided and selected by the maintainer for public display**, replacing the earlier gallery on **2026-10-21**. They show the actual **Windows personal edition**, not design mockups or manually fabricated conversation transcripts. The Community edition shares these workflows but adds its own first-run service configuration and separate app identity; its installation is not the same as an already-configured personal deployment.
 
-Only screens without private note bodies, diary entries, conversations, credentials or account details are included. No private record was modified to stage a screenshot. The gallery does not claim Android visual verification, a new benchmark, perfect retrieval, or universal background reliability.
+The AI conversation example includes a maintainer-approved excerpt about study planning and a diary date. Its publication is intentional; other private records, credentials and full conversation histories are not included. These supplied images were not retouched or rewritten. The gallery does not claim Android visual verification, a new benchmark, perfect retrieval, or universal background reliability. Model answers, bibliographic metadata and market quotes still require checking against their sources.
 
 ### One knowledge workspace, several exploration paths
 
-![Actual Windows exploration hub: news, literature, knowledge, puzzles and stock research](images/exploration-hub.jpg)
+![Actual Windows exploration hub: news, literature, knowledge, puzzles and stock research](images/exploration-hub.png)
 
 Knowledge exploration lives inside the existing knowledge workspace rather than adding five more primary navigation destinations. A user can move from reading and discovery back into their own notes.
 
 Source: [workspace hub](../lib/features/notes/knowledge_exploration_hub.dart), [notes navigation](../lib/features/notes/notes_screen.dart).
 
+### A conversation grounded in the user's own material / 围绕个人资料的 AI 对话
+
+![Maintainer-approved AI conversation: prioritization grounded in a diary excerpt, with missing task information disclosed](images/ai-conversation.png)
+
+The user asks what to prioritize from recent tasks and a diary. In this actual response, the assistant explicitly states that the available material contains a diary but no recent task list, deadlines or task statuses. It then separates the available facts, its reasons and its suggestions rather than pretending to compare tasks it has not received.
+
+This illustrates the intended workflow: **ask naturally about personal material, receive a structured answer, and see the limits of the evidence**. Named cloud conversations, selected sources, conversation history, user-managed memories and conversation-specific resources support continued discussion in the current implementation. Retrieval and context budgets still apply; a single screenshot does not establish perfect memory, complete retrieval or factual correctness on every turn.
+
+中文说明：不是另开一个与资料无关的聊天框，而是围绕自己的笔记、日记和任务继续提问。示例里的亮点是“说明实际用了哪些资料、缺少哪些资料”，以及把事实、理由和建议区分开；不能据此宣称助手每次都会读到全部内容。
+
+Source: [AI assistant service](../lib/shared/services/ai_assistant_service.dart), [search and chat workspace](../lib/features/search/).
+
 ### Research questions, not only a fixed keyword feed
 
-![Actual literature entry screen explaining research intent, multiple providers and cached same-day reports](images/literature-entry.jpg)
+![Actual literature search results with provider counts, relevance labels, abstract interpretation and research-library actions](images/literature-results.png)
 
-The literature entry accepts a research question and optional fallback keywords. Its underlying workflow combines public academic sources, relevance assessment, clearly separated abstract/full-PDF interpretation, a saved research library, excerpts and links into Markdown notes. This screenshot shows the entry, **not a completed search result or proof of matching accuracy**.
+The literature entry accepts a research question and optional fallback keywords. The supplied screenshot now shows an actual result for the broad query **"ai"**, with provider coverage, candidate/recommendation counts, estimated model cost, research-intent interpretation and relevance labels. The selected paper is marked as abstract-only, and the interpretation says it is based on the abstract rather than claiming full-PDF reading.
+
+Visible actions include collecting the paper, managing reading status/tags/notes, saving into notes, exploring research connections, adding excerpts and opening the source. The broader workflow also supports open-PDF analysis and saved interpretations. **This is a result example, not a benchmark of retrieval quality.** A zero-result source, an estimated match score or an unusual bibliographic date should be checked rather than treated as independently verified fact.
 
 Source: [discovery service](../lib/features/exploration/services/literature_discovery_service.dart), [literature screen](../lib/features/exploration/screens/literature_exploration_screen.dart), [library service](../lib/features/exploration/services/literature_library_service.dart).
 
 ### Built-in concepts with readable explanations
 
-![Actual knowledge card showing definition, underlying logic and an application example](images/knowledge-card.jpg)
+![Actual knowledge card showing definition, underlying logic and an application example](images/knowledge-card.png)
 
 The bundled knowledge collection currently contains **168 entries**. The card separates a definition, its reasoning and an example, with navigation and an optional read-state action. The displayed content comes from the bundled collection; no personal annotation or private AI conversation is shown.
 
@@ -40,13 +54,13 @@ Source: [knowledge reader](../lib/features/exploration/screens/knowledge_cards_s
 
 ### Market context with explicit research boundaries
 
-![Actual market radar showing public index quotes, breadth and gain/loss tables](images/market-radar.jpg)
+![Actual market radar showing public index quotes, breadth and gain/loss tables](images/market-radar.png)
 
 The market radar provides index quotes, breadth and gain/loss tables with a displayed observation time. Public quotes are external snapshots, not guaranteed real-time licensed data or recommendations to buy the displayed stocks. The screenshot does not expose a personal portfolio or experiment account.
 
 Source: [market gateway](../lib/features/exploration/services/stock_market_gateway.dart), [research screen](../lib/features/exploration/screens/stock_research_screen.dart).
 
-![Actual stock detail with candlesticks, volume, period/adjustment controls, indicators and a data-quality notice](images/stock-kline.jpg)
+![Actual stock detail with candlesticks, volume, period/adjustment controls, indicators and a data-quality notice](images/stock-kline.png)
 
 The detail screen combines candlesticks, volume, period/adjustment choices and deterministic indicators, keeping the source and quality notice beside the chart. Passing a structural data check is **not** commercial market-data authorization, a forecast, or proof of profitability. This is a public-market example, not a personal holding or a recommendation.
 
