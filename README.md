@@ -12,9 +12,13 @@
 
 **双端同步 · Markdown 与知识图谱 · 有记忆的 AI 对话 · 文献阅读工作流 · 可回看的 AI 模拟操盘 · 分层存储与完整备份**
 
-[下载安装](https://github.com/Dr-xu193/syncnote-community/releases) · [完整功能手册](docs/FEATURES.md) · [首次配置](docs/SETUP.md) · [AI 与免费额度](docs/AI_AND_FREE_TIERS.md) · [提交建议](https://github.com/Dr-xu193/syncnote-community/issues)
+[下载安装](https://github.com/Dr-xu193/syncnote-community/releases) · [实际界面与项目历程](docs/PROJECT_SHOWCASE.md) · [完整功能手册](docs/FEATURES.md) · [首次配置](docs/SETUP.md) · [AI 与免费额度](docs/AI_AND_FREE_TIERS.md) · [提交建议](https://github.com/Dr-xu193/syncnote-community/issues)
 
 > 社区版由个人使用版本整理而来，当前为早期公开预览。使用者连接自己的 Firebase、WebDAV 和可选 AI 服务；安装包不包含共享后台、默认账号或作者的私人凭据。
+
+![SyncNote 实际运行的探索中心，连接新闻、文献、知识卡片、逻辑推演与股票研究](docs/images/exploration-hub.jpg)
+
+这不是刚开始编写的软件：整理前的私人版本 Git 主线有 **78 次提交（2026-07-08 至 2026-10-18）**。公开社区版以独立的新历史发布，避免暴露私人数据与旧凭据。[查看脱敏开发时间线及统计口径](docs/DEVELOPMENT_HISTORY.md)。
 
 ## 从一次记录，到一套个人知识流程
 

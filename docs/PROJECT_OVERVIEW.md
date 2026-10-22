@@ -1,5 +1,7 @@
 # Project overview / 项目概览
 
+[Actual application views](PROJECT_SHOWCASE.md) · [Development timeline and evidence scope](DEVELOPMENT_HISTORY.md)
+
 ## What this project is
 
 SyncNote Community is an MIT-licensed Windows and Android workspace that connects personal capture, task execution, linked Markdown notes, journals, literature discovery, and AI-assisted research. It is a newly published community edition derived from a personal-use application, not an established ecosystem project with a claimed large user base.

@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="430" viewBox="0 0 1120 430" role="img" aria-labelledby="title desc">
+  <title id="title">SyncNote development before its community release</title>
+  <desc id="desc">Maintainer-reported private Git baseline, 78 commits dated July 8 to October 18, 2026: July 32, August 34, September 11, October 1. These are not public adoption metrics.</desc>
+  <rect width="1120" height="430" rx="24" fill="#f5f3ff"/>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="42" y="53" font-size="26" font-weight="700" fill="#211936">Newly public. Already built.</text>
+    <text x="42" y="83" font-size="15" fill="#5b536d">Private baseline: 2026-07-08 to 2026-10-18 · 78 commits · Checked 2026-10-21</text>
+    <line x1="48" y1="337" x2="720" y2="337" stroke="#d8d1ef"/>
+    <rect x="100" y="161" width="104" height="176" rx="9" fill="#7861ed"/>
+    <rect x="264" y="150" width="104" height="187" rx="9" fill="#6350d5"/>
+    <rect x="428" y="276.5" width="104" height="60.5" rx="9" fill="#9b88e9"/>
+    <rect x="592" y="331.5" width="104" height="5.5" rx="2" fill="#b7a9ef"/>
+    <g font-size="23" font-weight="700" fill="#35255f" text-anchor="middle">
+      <text x="152" y="144">32</text><text x="316" y="133">34</text><text x="480" y="260">11</text><text x="644" y="315">1</text>
+    </g>
+    <g font-size="16" fill="#5b536d" text-anchor="middle">
+      <text x="152" y="367">July</text><text x="316" y="367">August</text><text x="480" y="367">September</text><text x="644" y="367">October *</text>
+    </g>
+    <rect x="780" y="128" width="292" height="225" rx="17" fill="#ffffff"/>
+    <text x="803" y="166" font-size="18" font-weight="700" fill="#35255f">Community release</text>
+    <g font-size="15" fill="#5b536d">
+      <text x="803" y="198">2026-10-21 · MIT</text>
+      <text x="803" y="230">Windows + Android packages</text>
+      <text x="803" y="258">User-owned service configuration</text>
+      <text x="803" y="286">Public tests, CI and documentation</text>
+      <text x="803" y="324" font-size="13">Private data and keys stay private.</text>
+    </g>
+    <text x="42" y="405" font-size="13" fill="#716780">Aggregated Git committer-date metadata, not a GitHub screenshot or adoption claim. * October baseline ends on October 18.</text>
+  </g>
+</svg>
