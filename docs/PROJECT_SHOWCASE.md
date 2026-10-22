@@ -8,6 +8,8 @@
 
 SyncNote began as a privately developed, daily-use application. Its original Git baseline contains **78 commits dated July 8–October 18, 2026**. The MIT community edition was published separately on October 21 to keep personal data, old credentials and signing keys out of public history. [The timeline and its exact counting scope](DEVELOPMENT_HISTORY.md) distinguish private development from public adoption.
 
+The [original private-version evidence](DEVELOPMENT_HISTORY.md#original-private-version-evidence) includes two maintainer-supplied repository screenshots: the 78-commit baseline and the planning/progress/release-document listing. They are supporting development-history material, kept separate from the feature gallery below; publishing the images does not make the original repository public.
+
 ## Actual application views
 
 The six screenshots below were **provided and selected by the maintainer for public display**, replacing the earlier gallery on **2026-10-21**. They show the actual **Windows personal edition**, not design mockups or manually fabricated conversation transcripts. The Community edition shares these workflows but adds its own first-run service configuration and separate app identity; its installation is not the same as an already-configured personal deployment.

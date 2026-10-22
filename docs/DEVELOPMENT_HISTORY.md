@@ -18,6 +18,24 @@ The maintainer's original local Git history, checked on **2026-10-21**, contains
 
 These are **maintainer-reported aggregates derived from private Git metadata**, not screenshots of a public GitHub contribution graph. They are not public-repository commits, external contributors, issue counts, downloads or evidence of broad adoption. The private repository and its full history remain private.
 
+## Original private-version evidence
+
+以下两张图片由维护者主动提供，并于 **2026-10-22** 授权用于公开展示。它们记录的是原 **private `syncnote`** 仓库界面，不是当前 `syncnote-community` 的公开贡献统计。公开这些选定截图不会改变原仓库权限，也不提供私人源码、文档正文、账号配置或完整历史的访问权限。
+
+### Repository baseline and ongoing fixes
+
+![Maintainer-supplied private repository overview showing the Private badge, 78 commits, application modules and the latest Windows login/cache fix](images/private-baseline-overview.png)
+
+This selected overview shows the **Private** badge, **78 commits**, the Flutter/Android/Windows/Python project structure and a Windows login/cache correction in the latest visible commit. It supplements the development timeline with an actual repository view; it does not establish broad public usage, release quality or the correctness of every feature. Relative labels such as "3 days ago" belong to the supplied screenshot, not a live activity indicator.
+
+### Planning, progress and release-work documents
+
+![Maintainer-supplied private repository file listing showing project plans, progress records, execution specifications and release smoke-test documents](images/private-baseline-engineering.png)
+
+The second selected view shows planning, execution-specification, progress and release smoke-test **filenames** beside their commit summaries. It is evidence that the original project included these engineering artifacts, not an independent review of their contents or proof that all acceptance criteria were met. The language breakdown belongs to the private snapshot and should not be presented as the public edition's current statistics.
+
+Together with the [actual application views](PROJECT_SHOWCASE.md), [public source](https://github.com/Dr-xu193/syncnote-community), [tests](../test/) and [preview release](https://github.com/Dr-xu193/syncnote-community/releases/tag/v0.1.0), these images help explain the distinction between a newly opened repository and an application with earlier development work. Only the selected screenshots are published; the private repository stays private.
+
 ## Selected milestones
 
 The following summaries are based on the original commit subjects and describe what was introduced or repaired at the time. A historical commit described as completing a phase is not a guarantee that its features have no remaining limitations.
